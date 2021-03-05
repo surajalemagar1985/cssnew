@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		body{
+			margin: 0;
+			padding: 0;
+			background-color: orangered;
+		}
+		.main{
+			height: 300px;
+			width: 300px;
+			margin: auto;
+			position: relative;
+			margin-top: 50px;
+
+		}
+		img{
+			height: 100%;
+			width: 100%;
+		}
+		.box{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: cyan;
+			opacity: 0.3;
+			display: none;
+		}
+		.main:hover .box{
+			display: block;
+		}
+		button{
+			position: absolute;
+			top:50%;
+			left:35%;
+			display: none;
+			padding: 10px;
+			/*background-color: transparent;*/
+			background-color: orangered;
+			font-weight: bolder;
+			border-radius: 5px;
+		}
+		.main:hover button{
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<img src="img1.jpg">
+		<div class="box"></div>
+		<div class="show">
+		<button>Show More</button>
+
+		
+	</div>
+
+</body>
+</html>
